@@ -48,7 +48,7 @@ For questions where the answer was **incorrect**, **partial**, or **missing**, p
 
 Always produce a structured Markdown document with these sections in order:
 
-### 1. 问题列表 (Question List)
+### 1. 问题列表
 
 A numbered list of all questions extracted from the interview, in order.
 
@@ -58,7 +58,7 @@ A numbered list of all questions extracted from the interview, in order.
 ...
 ```
 
-### 2. 问题深意 (Question Deep Dive)
+### 2. 问题深意
 
 For each question (or a representative selection of the most important ones), explain what the interviewer was really testing.
 
@@ -72,7 +72,7 @@ Format:
 - **深层意图**: The unspoken concern or signal behind the question
 - **理想回答的方向**: What a strong candidate would cover
 
-### 3. 面试结果分析 (Performance Summary)
+### 3. 面试结果分析
 
 - **总体评价**: Overall assessment (1-2 sentences)
 - **正确率**: Percentage of correct / acceptable answers
@@ -83,7 +83,7 @@ Format:
   - 沟通表达: Score + brief note
 - **优劣势总结**: Key strengths and areas to improve
 
-### 4. 错误答案纠正 (Error Correction)
+### 4. 错误答案纠正
 
 For each question answered incorrectly or inadequately:
 
@@ -93,6 +93,35 @@ For each question answered incorrectly or inadequately:
 - **问题所在**: What was wrong or insufficient
 - **正确答案**: The correct / model answer
 - **建议**: Tips for handling similar questions in the future
+
+### 5. 面试总结
+
+**For technical interviews** (coding, system design, architecture, project deep-dive) — use the sub title `#### 建议你重点补的内容` and produce a "To Learn List":
+
+A bulleted list of concrete topics to study, grouped by theme. Each bullet names the theme in bold, then lists the specific sub-topics that this interview revealed as gaps. Be specific enough to act on — name exact concepts, APIs, and mechanisms rather than vague areas. Draw the items from questions the candidate actually struggled with, plus closely related gaps those struggles imply.
+
+Format:
+
+```
+- **主题**: 知识点1、知识点2、知识点3。
+- **项目表达**: 每个项目准备一版"业务背景 → 我的职责 → 架构链路 → 技术难点 → 结果指标 → 复盘"的 2 分钟答案。
+```
+
+Example themes: 语言与框架基础、计算机基础、系统设计、算法与数据结构、项目表达、手写代码、工程实践。
+
+**For HR / behavioral / culture-fit interviews** — use the sub title `#### 综合建议` and produce a numbered list of strategic advice:
+
+Each item leads with a short directive, then explains the reasoning and gives one or two concrete, personalized examples drawn from this candidate's actual background (their story, their resume, their answers in this interview). Avoid generic advice that would apply to anyone.
+
+Format:
+
+```
+1. 建好你的叙事主线。用一句话串起你的职业轨迹和求职动机，每次面试前先练一遍。
+2. 面试是双向选择，主动提问。准备几个反问，既帮你判断机会是否适合，也让对方觉得你认真在评估。
+3. ...
+```
+
+**For mixed interviews** (technical and HR in one session) — include both: first `#### 1. 建议你重点补的内容`, then `#### 2. 综合建议`.
 
 ## Output rules (CRITICAL)
 
