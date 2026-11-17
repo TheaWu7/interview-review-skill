@@ -46,6 +46,8 @@ For questions where the answer was **incorrect**, **partial**, or **missing**, p
 
 ## Output format
 
+**Language**: Write the entire review in the same language as the input transcript — English input → English output, Chinese input → Chinese output, mixed input → use the dominant language. This applies to every section title and field label, not just the prose.
+
 Always produce a structured Markdown document with these sections in order:
 
 ### 1. 问题列表
@@ -126,3 +128,4 @@ Format:
 ## Output rules (CRITICAL)
 
 1. Output the full review directly in the chat as a Markdown document — do NOT write it to a file. The structured document below IS the final response.
+2. Match the output language to the input transcript's language — headings, labels, and body. Chinese interview → Chinese output; English interview → English output.
